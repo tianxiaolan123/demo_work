@@ -1,0 +1,124 @@
+@import '~common/stylus/variable'
+@import '~common/stylus/mixin'
+.container
+  width 100%
+  min-height 100%
+  background url(http://static.guobaoyoo.com/img/naonao/bg.png) repeat center top
+  background-size contain
+  background-attachment fixed
+  position relative
+
+  .lists
+    padding 20px 20px 193px 20px
+
+    .lists-item
+      width 100%
+      height 300px
+      box-shadow 0 0 10px #9d6f4d
+      background url(http://static.guobaoyoo.com/img/naonao/plum.png) no-repeat top left
+      background-size 274px 167px
+      background-color #fff
+      position relative
+      padding 30px 30px 20px 280px
+      box-sizing border-box
+      border-radius 5px
+      margin-bottom 20px
+
+      .picture-description
+        font-size 24px
+        color #803e19
+
+        .date
+          font-size 26px
+          font-weight bold
+          text-align center
+
+        .text
+          margin-top 10px
+          line-height 1.8
+          text-indent 2em
+          text-align left
+
+      .picture-photo
+        width 260px
+        height 260px
+        position absolute
+        top 20px
+        left 15px
+        background url(http://static.guobaoyoo.com/img/naonao/photo.png) no-repeat center center
+        background-size contain
+        box-sizing border-box
+        padding 10px 16px 10px 10px
+        display flex
+        flex-direction row
+        align-items center
+        justify-content center
+        overflow hidden
+
+        &:before
+          content ""
+          width 240px
+          height 240px
+          position absolute
+          top 50%
+          left 50%
+          transform translate(-50%, -50%)
+          background url(http://static.guobaoyoo.com/img/naonao/img-bg.png) no-repeat center center
+          background-size contain
+          opacity 0.1
+        
+        img
+          max-width 100%
+          height auto
+          position relative
+
+      .back-cat
+        width 256px
+        height 117px
+        background url(http://static.guobaoyoo.com/img/naonao/cat-2.png) no-repeat center center
+        background-size contain
+        position absolute
+        left -20px
+        bottom -35px
+        font-size 20px
+        opacity 0.9
+
+  .go-to-top
+    width 80px
+    height 80px
+    background url(http://static.guobaoyoo.com/img/naonao/go-top.png) no-repeat center left
+    background-size contain
+    position fixed
+    right 30px
+    bottom 200px
+    opacity 0.7
+
+  .footer
+    width 100%
+    height 193px
+    background url(http://static.guobaoyoo.com/img/naonao/footer.png) no-repeat center left
+    background-size contain
+    position fixed
+    bottom 0
+    left 0
+
+  .picture-detail
+    width 100%
+    height 100%
+    background-color rgba(0,0,0,0.6)
+    position fixed
+    top 0
+    left 0
+    overflow auto
+    padding 20px
+    box-sizing border-box
+
+    img
+      max-width 100%
+
+    p
+      font-size 24px
+      color #fff
+      text-align left
+      line-height 1.8
+      margin 30px 10%
